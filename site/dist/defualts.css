@@ -1,8 +1,13 @@
 #main{
   background-color: rgba(2, 2, 2, 0.5);
+
 }
 
-ul {
+.jumbotron {
+  min-height: 375px
+}
+
+#top_bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,11 +15,11 @@ ul {
     background-color: #333;
 }
 
-li {
+#tp {
     float: left;
 }
 
-li a {
+#tp a {
     display: block;
     color: white;
     text-align: center;
@@ -22,7 +27,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+#tp a:hover:not(.active) {
     background-color: #111;
 }
 
@@ -31,19 +36,37 @@ li a:hover:not(.active) {
 }
 
 
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.content {
+  width: 70%;
+  padding-top: 5%;
+  height: 150vh;
+}
+
+.sidebar {
+  width: 15%;
+  height: 25vh;
+  background-color: #f1f1f1;
+  height: 400px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+
 #second_scroll {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 20%;
+    width: auto;
     background-color: #f1f1f1;
-    height: 100%;
-    position: fixed;
+    height: 50%;
     overflow: auto;
-}
-
-#second {
-  float: none;
 }
 
 #second a {
