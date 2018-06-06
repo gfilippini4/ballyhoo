@@ -14,10 +14,13 @@ app.get('/ballyhoo', function(req,res){
   res.sendFile(path.join(__dirname+'/dist/ballyhooTemp.jpg'));
 });
 
-app.get('/blogo', function(req,res){
-  res.sendFile(path.join(__dirname+'/dist/blogo.jpg'));
+app.get('/logo', function(req,res){
+  res.sendFile(path.join(__dirname+'/dist/BallyhooLogo.jpg'));
 });
 
+app.get('/banner', function(req,res){
+  res.sendFile(path.join(__dirname+'/dist/Banner.png'));
+});
 
 
 app.listen(8000);
